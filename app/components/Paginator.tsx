@@ -22,7 +22,7 @@ const Paginator: React.FC<PaginatorProps> = ({ onPageChange }) => {
   const pages = [...Array(pagesToShow)].map((_, i) => startPage + i); 
 
   return (
-    <div className="flex flex-col items-center justify-center gap-2 bg-zinc-800/30 h-full px-4 border-l dark:border-neutral-800 ">
+    <div className="flex flex-col items-center justify-center gap-2 bg-zinc-800/30 h-full px-4 border-l border-neutral-800 ">
       <button
         className="h-10 px-3 py-1 rounded bg-zinc-700/30 text-gray-400 hover:bg-zinc-600/30 disabled:opacity-50 rotate-90 font-bold"
         onClick={() => handlePageChange(0)}
